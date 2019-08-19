@@ -25,8 +25,8 @@ class HanfengSmartlink {
     }
   }
 
-  static Future<bool> startLink(String ssid, String password) async {
-    return await _channel.invokeMethod<bool>(
+  static Future<String> startLink(String ssid, String password) async {
+    return await _channel.invokeMethod<String>(
       'startLink',
       <String, Object>{'ssid': ssid, 'password': password},
     );
