@@ -27,7 +27,8 @@ class _MyAppState extends State<MyApp> {
     try {
       wifiName = await HanfengSmartlink.getWifiName;
       bool isWifi = await HanfengSmartlink.isWifi;
-      await HanfengSmartlink.startLink("Jack's iPhone", "nydju2haeys001");
+      print(wifiName);
+      //await HanfengSmartlink.startLink("Jack's iPhone", "jackhu1990@gmail.com");
     } on PlatformException {
       wifiName = 'Failed to get wifiName.';
     }

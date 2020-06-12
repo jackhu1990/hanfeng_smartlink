@@ -1,6 +1,6 @@
 name: hanfeng_smartlink
 description: 汉枫wifi 配网插件
-version: 0.0.1
+version: 0.0.2
 author: jackhu1990@gmail.com
 homepage: https://github.com/jackhu1990/hanfeng_smartlink
 
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  connectivity: ^0.4.3+7
+  connectivity: ^0.4.8+6
 
 dev_dependencies:
   flutter_test:
