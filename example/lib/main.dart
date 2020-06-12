@@ -25,10 +25,7 @@ class _MyAppState extends State<MyApp> {
     String wifiName;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      wifiName = await HanfengSmartlink.getWifiName;
-      bool isWifi = await HanfengSmartlink.isWifi;
-      print(wifiName);
-      //await HanfengSmartlink.startLink("Jack's iPhone", "jackhu1990@gmail.com");
+      await HanfengSmartlink.startLink("Jack's iPhone", "jackhu1990@gmail.com");
     } on PlatformException {
       wifiName = 'Failed to get wifiName.';
     }
